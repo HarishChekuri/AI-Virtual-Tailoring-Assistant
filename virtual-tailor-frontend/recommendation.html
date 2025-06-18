@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Style Recommendations</title>
+  <link rel="stylesheet" href="recommendation.css" />
+  <link rel="icon" href="icon.png" type="image/png">
+</head>
+<body>
+  <div class="container zoom-in">
+    <h2>🧠 Your Personalized Style Recommendation</h2>
+    
+    <label for="styleType">Select Style:</label>
+    <select id="styleType" onchange="fetchStyleTips()">
+      <option value="casual">Casual</option>
+      <option value="office">Office</option>
+      <option value="party">Party</option>
+    </select>
+
+    <div id="output" class="tip">Loading...</div>
+    
+    <br>
+    <a href="home.html" id="backBtn"><button>⬅ Back to Home</button></a>
+  </div>
+
+  <script src="recommendation.js"></script>
+</body>
+</html>

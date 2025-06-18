@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Place Order</title>
+  <link rel="stylesheet" href="order.css" />
+  <link rel="icon" href="icon.png" type="image/png">
+</head>
+<body>
+  <div class="container zoom-in">
+    <h2>🛍️ Simulate Order</h2>
+
+    <form id="orderForm" class="glass-form">
+      <label>Choose Type:</label>
+      <select id="type">
+        <option value="shirt">Shirt</option>
+        <option value="pant">Pant</option>
+      </select>
+
+      <label>Fabric:</label>
+      <input type="text" id="fabric" required />
+
+      <label>Color:</label>
+      <input type="text" id="color" required />
+
+      <label>Design:</label>
+      <input type="text" id="design" required />
+
+      <button type="submit">Place Order</button>
+    </form>
+
+    <div id="message" class="message"></div>
+    <br />
+    <a href="home.html" id="backBtn"><button>⬅ Back to Home</button></a>
+  </div>
+
+  <script src="order.js"></script>
+</body>
+</html>

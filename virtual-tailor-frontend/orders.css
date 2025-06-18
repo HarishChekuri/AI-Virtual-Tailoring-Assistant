@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #4facfe, #8f5fe8);
+  color: #1A1A1A;
+  text-align: center;
+  padding: 40px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+h2 {
+  margin-bottom: 30px;
+}
+
+.order-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order {
+  background: rgba(255, 255, 255, 0.13);;
+  border: 1px solid #ffffff22;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s ease;
+}
+
+.order:hover {
+  transform: scale(1.02);
+}
+
+.order p {
+  margin: 6px 0;
+  font-size: 1.5rem;
+  color: #1A1A1A;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background-color: #1A1A1A;
+  color: #fff;
+  box-shadow: 0 0 10px #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background-color: #fff;
+  color: #1A1A1A;
+}
+
+.zoom-in {
+  animation: zoomIn 0.6s ease-in-out;
+}
+
+.zoom-out {
+  animation: zoomOut 0.4s ease-in-out;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0.6;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomOut {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #4facfe, #8f5fe8);
+  color: #1A1A1A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-container {
+  width: 380px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color:#1A1A1A;
+  font-style: italic;
+}
+
+form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+form input:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #1A1A1A;
+  margin-top: 5px;
+}
+
+.options a {
+  color: #1A1A1A;
+  text-decoration: none;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 20px;
+  border: none;
+  background: #1A1A1A;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.6);
+  animation: float 2s ease-in-out infinite;
+}
+
+button:hover {
+  background-color: #eee;
+  transform: scale(1.04);
+
+}
+
+.login-logo {
+  width: 180px;
+  margin-bottom: 20px;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Optional logo animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+}
+
+/* Zoom in animation */
+.form-container.zoom-in {
+  animation: zoomIn 0.4s ease;
+}
+
+@keyframes zoomIn {
+  0% { transform: scale(0.9); opacity: 0.7; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Custom styled alert */
+.custom-alert {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  color: #1A1A1A;
+  padding: 14px 28px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  z-index: 999;
+  font-weight: bold;
+  opacity: 0;
+  animation: fadeInOut 3s ease;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateX(-50%) translateY(-20px); }
+  10% { opacity: 1; transform: translateX(-50%) translateY(0); }
+  90% { opacity: 1; transform: translateX(-50%) translateY(0); }
+  100% { opacity: 0; transform: translateX(-50%) translateY(-20px); }
+}

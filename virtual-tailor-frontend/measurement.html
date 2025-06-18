@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Manual Measurement</title>
+  <link rel="stylesheet" href="measurement.css" />
+  <link rel="icon" href="icon.png" type="image/png">
+</head>
+<body onload="animateEntry()">
+
+  <div class="zoom-in-container">
+    <h1 class="title">📏 Manual Measurement</h1>
+
+    <div class="container">
+      <!-- Shirt Form -->
+      <form id="shirtForm" class="glass-form">
+        <h2>👕 Shirt</h2>
+        <div class="input-group"><span>📏</span><input type="number" name="length" placeholder="Length" required /></div>
+        <div class="input-group"><span>📐</span><input type="number" name="shoulder" placeholder="Shoulder" required /></div>
+        <div class="input-group"><span>🧥</span><input type="number" name="sleeveLength" placeholder="Sleeve Length" required /></div>
+        <div class="input-group"><span>💪</span><input type="number" name="chest" placeholder="Chest" required /></div>
+        <div class="input-group"><span>🍽️</span><input type="number" name="stomach" placeholder="Stomach" required /></div>
+        <div class="input-group"><span>🦵</span><input type="number" name="hips" placeholder="Hips" required /></div>
+        <div class="input-group"><span>🧣</span><input type="number" name="neck" placeholder="Neck" required /></div>
+        <button type="submit">Save Shirt</button>
+      </form>
+
+      <!-- Pant Form -->
+      <form id="pantForm" class="glass-form">
+        <h2>👖 Pant</h2>
+        <div class="input-group"><span>📏</span><input type="number" name="length" placeholder="Length" required /></div>
+        <div class="input-group"><span>👖</span><input type="number" name="waist" placeholder="Waist" required /></div>
+        <div class="input-group"><span>🦵</span><input type="number" name="hips" placeholder="Hips" required /></div>
+        <div class="input-group"><span>🔻</span><input type="number" name="bottom" placeholder="Bottom" required /></div>
+        <div class="input-group"><span>🍑</span><input type="number" name="seatRound" placeholder="Seat Round" required /></div>
+        <button type="submit">Save Pant</button>
+      </form>
+    </div>
+
+    <div class="back-link">
+      <a href="home.html">← Back to Home</a>
+    </div>
+  </div>
+
+  <script src="measurement.js"></script>
+
+  <script>
+    function animateEntry() {
+      document.querySelector(".zoom-in-container").classList.add("zoom-in");
+    }
+  </script>
+  <div id="customAlert" class="custom-alert">This is a message</div>
+</body>
+</html>

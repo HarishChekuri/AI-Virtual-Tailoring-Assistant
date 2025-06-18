@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Virtual Tailoring Assistant - Home</title>
+  <link rel="stylesheet" href="home.css" />
+  <link rel="icon" href="icon.png" type="image/png">
+</head>
+<body>
+  <div class="container zoom-in">
+    <h1 id="welcomeMessage">Welcome, <span class="glow">[User]</span>!</h1>
+    <p class="subtitle">Your virtual tailoring starts here.</p>
+
+    <div class="features-grid">
+
+      <div class="feature">
+        <h2>📏 Manual Measurements</h2>
+        <p>Enter your body size details manually.</p>
+        <button onclick="goTo('measurement.html')">Start</button>
+      </div>
+
+      <div class="feature">
+        <h2>📸 AI Image Measurement</h2>
+        <p>Upload a photo and let AI detect your body size.</p>
+        <button onclick="goTo('ai-image-measurement.html')">Upload</button>
+      </div>
+
+      <div class="feature">
+        <h2>📊 Fit Accuracy Score</h2>
+        <p>Check how well a dress fits your body (AI-based).</p>
+        <a href="fit-score.html"><button>Check Fit</button></a>
+      </div>
+
+      <div class="feature">
+        <h2>🧥 Virtual Try-On</h2>
+        <p>Preview clothing on a 3D avatar or with your webcam.</p>
+        <a href="tryon.html"><button>Try Now</button></a>
+        <!-- <a href="avatar3d.html"><button>👤 Try 3D Avatar</button></a> -->
+      </div>
+
+      <div class="feature">
+        <h2>🕒 Measurement History</h2>
+        <p>View your past body measurement records.</p>
+        <button onclick="goTo('history.html')">View History</button>
+      </div>
+
+      <div class="feature">
+        <h2>👗 Saved Outfits (Closet)</h2>
+        <p>Access your favorite looks anytime.</p>
+        <button onclick="goTo('closet.html')">View Closet</button>
+      </div>
+
+      <div class="feature">
+        <h2>✨ Style Recommendations</h2>
+        <p>Get clothing ideas based on your body and preferences.</p>
+        <button onclick="goTo('recommendation.html')">Get Ideas</button>
+      </div>
+
+      <div class="feature">
+        <h2>🎨 Customize Clothing</h2>
+        <p>Select your own fabric, color, and design patterns.</p>
+        <button onclick="goTo('customize.html')">Customize</button>
+      </div>
+
+      <div class="feature">
+        <h2>🛍️ Place Order</h2>
+        <p>Confirm your fabric, color, and design to simulate an order.</p>
+        <button onclick="goTo('order.html')">Order Now</button>
+      </div>
+
+      <div class="feature">
+        <h2>📦 My Orders</h2>
+        <p>View your placed orders.</p>
+        <button onclick="goTo('orders.html')">View Orders</button>
+      </div>
+
+      <div class="feature">
+        <h2>🚪 Logout</h2>
+        <p>End your session and return to login.</p>
+        <button onclick="logout()">Logout</button>
+      </div>
+
+
+    </div>
+  </div>
+
+  <script src="home.js"></script>
+</body>
+</html>

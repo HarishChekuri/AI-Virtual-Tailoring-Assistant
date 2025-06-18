@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Customize Clothing</title>
+  <link rel="stylesheet" href="customize.css" />
+  <link rel="icon" href="icon.png" type="image/png">
+</head>
+<body>
+  <div class="container zoom-in">
+    <h2>🎨 Customize Your Clothing</h2>
+
+    <div class="form-box">
+      <label>Type:</label>
+      <select id="type">
+        <option value="shirt">Shirt</option>
+        <option value="pant">Pant</option>
+      </select><br>
+
+      <label>Fabric:</label>
+      <select id="fabric">
+        <option value="cotton">Cotton</option>
+        <option value="linen">Linen</option>
+        <option value="denim">Denim</option>
+      </select><br>
+
+      <label>Color:</label>
+      <select id="color">
+        <option value="white">White</option>
+        <option value="black">Black</option>
+        <option value="blue">Blue</option>
+      </select><br>
+
+      <label>Design:</label>
+      <select id="design">
+        <option value="plain">Plain</option>
+        <option value="striped">Striped</option>
+        <option value="floral">Floral</option>
+      </select><br>
+
+      <button onclick="saveCustomization()">💾 Save Customization</button>
+      <br><br>
+      <a href="home.html" id="backBtn"><button>⬅ Back to Home</button></a>
+    </div>
+
+    <p id="msg"></p>
+  </div>
+
+  <script src="customize.js"></script>
+</body>
+</html>

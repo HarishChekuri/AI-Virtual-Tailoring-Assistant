@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Fit Accuracy Score</title>
+  <link rel="stylesheet" href="fit-score.css" />
+  <link rel="icon" href="icon.png" type="image/png">
+</head>
+<body class="zoom-in">
+  <h1 class="title">🎯 Fit Accuracy Score</h1>
+
+  <div class="container">
+    <form id="fitForm" class="glass-form">
+      <h2>👕 Select Type</h2>
+      <div class="input-group">
+        <span>📄</span>
+        <select id="fitType" required>
+          <option value="shirt">Shirt</option>
+          <option value="pant">Pant</option>
+        </select>
+      </div>
+
+      <button type="button" onclick="calculateFit()">Check My Fit</button>
+      <div id="result" class="score"></div>
+      <button type="button" id="saveBtn" style="display:none;" onclick="saveToCloset()">💾 Save to Closet</button>
+    </form>
+  </div>
+
+  <div class="back-link">
+    <a href="home.html" onclick="animateExit(event)">← Back to Home</a>
+  </div>
+
+  <script src="fit-score.js"></script>
+</body>
+</html>

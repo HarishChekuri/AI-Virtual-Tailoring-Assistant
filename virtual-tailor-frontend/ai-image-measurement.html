@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Image Measurement</title>
+  <link rel="stylesheet" href="ai-image-measurement.css" />
+  <link rel="icon" href="icon.png" type="image/png">
+</head>
+<body>
+  <div class="container zoom-in">
+    <h2>🤖 AI Image Measurement</h2>
+
+    <!-- ✅ Instruction Box -->
+    <div class="instructions-card">
+      <h3>📸 Instructions:</h3>
+      <ul>
+        <li>📏 Enter your real height (in centimeters) before uploading.</li>
+        <li>🧍 Stand upright, full body visible in the photo.</li>
+        <li>📷 Use a clear, well-lit photo with a plain background.</li>
+        <li>👕 Avoid loose/baggy clothes for better measurement accuracy.</li>
+        <li>📤 Upload the image to get AI-detected measurements.</li>
+      </ul>
+    </div>
+
+    <input type="number" id="realHeight" placeholder="Your real height (cm)" required />
+    <input type="file" id="imageInput" accept="image/*" required />
+    <button onclick="uploadImage()">Upload & Measure</button>
+
+    <div class="back-link">
+      <a href="home.html">← Back to Home</a>
+    </div>
+
+    <div id="result" class="alert-area"></div>
+  </div>
+
+  <script src="ai-image-measurement.js"></script>
+</body>
+</html>

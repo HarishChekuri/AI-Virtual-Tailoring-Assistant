@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Virtual Try-On</title>
+  <link rel="stylesheet" href="tryon.css" />
+  <link rel="icon" href="icon.png" type="image/png">
+</head>
+<body class="zoom-in">
+  <h1 class="title">🧍 Virtual Try-On (Webcam)</h1>
+
+  <div class="video-container">
+    <video id="video" width="640" height="480" autoplay></video>
+    <img id="shirt" src="blue shirt.png" class="overlay draggable" width="300"
+         style="position: absolute; top: 100px; left: 50%; transform: translateX(-50%);" />
+  </div>
+
+  <div class="button-group">
+    <button onclick="changeShirt('blue shirt.png')">👔 Blue Shirt</button>
+    <a href="home.html" onclick="animateExit(event)"><button>⬅ Back to Home</button></a>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+  <script src="tryon.js"></script>
+</body>
+</html>
